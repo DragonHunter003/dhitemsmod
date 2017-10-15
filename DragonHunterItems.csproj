@@ -44,6 +44,8 @@
     <Compile Include="Items\CelestialShieldDestroyer.cs" />
     <Compile Include="Items\DefensivePotion.cs" />
     <Compile Include="Items\Lepidopterameter.cs" />
+    <Compile Include="Items\ExplorationPotion.cs" />
+    <Compile Include="Items\MovementPotion.cs" />
     <Compile Include="Items\OffensivePotion.cs" />
     <Compile Include="Items\IntenseBattlePotion.cs" />
     <Compile Include="Items\DayNightCycler.cs" />
