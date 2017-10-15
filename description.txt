@@ -1,5 +1,6 @@
 *Warning heavily WIP and buggy*
-This mod adds a bunch of random items I've created most of which with a reduction of grinding during a vanilla playthrough in mind.
+*Please report any bugs on my github page*
+This mod adds a bunch of random items I've created, most of which with a reduction of grinding during a vanilla playthrough in mind.
 
 Version History:
 
@@ -18,3 +19,11 @@ v0.3
 v0.4
 -Added Lepidopterameter
 -Added Infinite Item
+
+v0.5
+-Added Exploration Potion
+-Added Movement Potion
+-Changed sprite for Offensive Potion
+
+v0.5.1
+-Added github page as homepage
