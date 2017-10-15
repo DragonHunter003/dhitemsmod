@@ -1,0 +1,20 @@
+*Warning heavily WIP and buggy*
+This mod adds a bunch of random items I've created most of which with a reduction of grinding during a vanilla playthrough in mind.
+
+Version History:
+
+v0.1
+-Added Celestial Shield Destroyer
+-Added Moon Phase cycler
+-Added Intense Battle Potion
+
+v0.2
+-Added Day Night Cycler
+
+v0.3
+-Added Defensive Potion
+-Added Offensive Potion
+
+v0.4
+-Added Lepidopterameter
+-Added Infinite Item

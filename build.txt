@@ -1,0 +1,3 @@
+author = DragonHunter003
+version = 0.4
+displayName = Dragon Hunter's Item Collection
