@@ -35,11 +35,13 @@
   <ItemGroup>
     <Compile Include="Buffs\ExplorationPotionsBuff.cs" />
     <Compile Include="Buffs\DefensivePotionsBuff.cs" />
+    <Compile Include="Buffs\FishingHookPotionBuff.cs" />
     <Compile Include="Buffs\MovementPotionsBuff.cs" />
     <Compile Include="Buffs\OffensivePotionsBuff.cs" />
     <Compile Include="Buffs\IntenseBattlePotionBuff.cs" />
     <Compile Include="DragonHunterItems.cs" />
     <Compile Include="DragonHunterItemsPlayer.cs" />
+    <Compile Include="Items\FishingHookPotion.cs" />
     <Compile Include="Items\InfiniteItem.cs" />
     <Compile Include="Items\CelestialShieldDestroyer.cs" />
     <Compile Include="Items\DefensivePotion.cs" />

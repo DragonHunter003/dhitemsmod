@@ -2,6 +2,7 @@
 using Terraria;
 using Terraria.DataStructures;
 using Microsoft.Xna.Framework;
+using System;
 
 namespace DragonHunterItems
 {
@@ -12,6 +13,7 @@ namespace DragonHunterItems
         public bool explorationBoost = false;
         public bool defensiveBoost = false;
         public bool movementBoost = false;
+        public bool fishingHookBoost = false;
 
         public override void ResetEffects()
         {
@@ -20,8 +22,8 @@ namespace DragonHunterItems
             explorationBoost = false;
             defensiveBoost = false;
             movementBoost = false;
-        }
-
+            fishingHookBoost = false;
+    }
         public override void UpdateDead()
         {
             intenseBattle = false;
@@ -29,6 +31,32 @@ namespace DragonHunterItems
             explorationBoost = false;
             defensiveBoost = false;
             movementBoost = false;
+            fishingHookBoost = false;
+        }
+
+        public override bool Shoot(Item item, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
+        {
+            if (fishingHookBoost && item.fishingPole > 0)
+            {
+                const float ANGLE_SPREAD = 0.25f;
+                const int AMOUNT_HOOKS = Items.FishingHookPotion.HOOKAMOUNT;
+
+                float baseSpeed = (float)Math.Sqrt(speedX*speedX + speedY*speedY);
+                float randomSpeed = Main.rand.NextFloat() * 0.2f + 0.9f;
+                double baseAngle = Math.Atan2(speedX, speedY);
+
+                for (int i = 0; i < AMOUNT_HOOKS; i++)
+                {
+                    double randomAngle = baseAngle + (-1f + 0.5f * i) * ANGLE_SPREAD;
+                    speedX = baseSpeed * randomSpeed * (float)Math.Sin(randomAngle);
+                    speedY = baseSpeed * randomSpeed * (float)Math.Cos(randomAngle);
+                    Projectile.NewProjectile(new Vector2(position.X, position.Y), new Vector2(speedX, speedY), type, damage, knockBack, player.whoAmI);
+                }
+
+
+                return true;
+            }
+            return true;
         }
 
         public override void UpdateBadLifeRegen()
