@@ -45,7 +45,7 @@ namespace DragonHunterItems.Items
         public override bool AltFunctionUse(Player player)
         {
             NPC.butterflyChance = 0;
-            return true;
+            return false;
         }
 
     }

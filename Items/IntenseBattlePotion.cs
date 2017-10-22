@@ -30,7 +30,7 @@ namespace DragonHunterItems.Items
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.BattlePotion, 5);
+            recipe.AddIngredient(ItemID.BattlePotion, 3);
             recipe.AddTile(TileID.Bottles);
             recipe.SetResult(this);
             recipe.AddRecipe();

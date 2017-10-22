@@ -31,16 +31,16 @@ namespace DragonHunterItems.Items
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.ManaRegenerationPotion, 3);
-            recipe.AddIngredient(ItemID.MagicPowerPotion, 3);
-            recipe.AddIngredient(ItemID.ArcheryPotion, 3);
-            recipe.AddIngredient(ItemID.HunterPotion, 3);
-            recipe.AddIngredient(ItemID.TitanPotion, 3);
-            recipe.AddIngredient(ItemID.SummoningPotion, 3);
-            recipe.AddIngredient(ItemID.AmmoReservationPotion, 3);
-            recipe.AddIngredient(ItemID.RagePotion, 3);
-            recipe.AddIngredient(ItemID.InfernoPotion, 3);
-            recipe.AddIngredient(ItemID.WrathPotion, 3);
+            recipe.AddIngredient(ItemID.ManaRegenerationPotion, 1);
+            recipe.AddIngredient(ItemID.MagicPowerPotion, 1);
+            recipe.AddIngredient(ItemID.ArcheryPotion, 1);
+            recipe.AddIngredient(ItemID.HunterPotion, 1);
+            recipe.AddIngredient(ItemID.TitanPotion, 1);
+            recipe.AddIngredient(ItemID.SummoningPotion, 1);
+            recipe.AddIngredient(ItemID.AmmoReservationPotion, 1);
+            recipe.AddIngredient(ItemID.RagePotion, 1);
+            recipe.AddIngredient(ItemID.InfernoPotion, 1);
+            recipe.AddIngredient(ItemID.WrathPotion, 1);
             recipe.AddTile(TileID.Bottles);
             recipe.SetResult(this);
             recipe.AddRecipe();

@@ -30,7 +30,6 @@ namespace DragonHunterItems.Items
 			ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(ItemID.IronBar, 25);
             recipe.anyIronBar = true;
-            //recipe.AddIngredient(ItemID.HallowedBar, 10);
             recipe.AddRecipeGroup("DragonHunterItems:CobaltBar", 10);
             recipe.AddIngredient(ItemID.SoulofLight, 15);
             recipe.AddIngredient(ItemID.SoulofNight, 15);

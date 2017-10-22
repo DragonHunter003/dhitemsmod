@@ -11,7 +11,7 @@ namespace DragonHunterItems.Items
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Fishing Hook Potion");
-            Tooltip.SetDefault("It's to to fish!");
+            Tooltip.SetDefault("Gives your fishing rod an additional "+HOOKAMOUNT+" hooks!");
         }
         public override void SetDefaults()
         {
@@ -33,7 +33,6 @@ namespace DragonHunterItems.Items
         {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(ItemID.FishingPotion, 3);
-            recipe.AddIngredient(ItemID.SonarPotion, 3);
             recipe.AddTile(TileID.Bottles);
             recipe.SetResult(this);
             recipe.AddRecipe();

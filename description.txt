@@ -27,3 +27,7 @@ v0.5
 
 v0.5.1
 -Added github page as homepage
+
+v0.6
+-Added Fishing Hook Potion
+-Changed recipes for the combination potions

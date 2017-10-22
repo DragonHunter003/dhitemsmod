@@ -31,10 +31,10 @@ namespace DragonHunterItems.Items
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.SwiftnessPotion, 3);
-            recipe.AddIngredient(ItemID.FeatherfallPotion, 3);
-            recipe.AddIngredient(ItemID.WaterWalkingPotion, 3);
-            recipe.AddIngredient(ItemID.FlipperPotion, 3);
+            recipe.AddIngredient(ItemID.SwiftnessPotion, 1);
+            recipe.AddIngredient(ItemID.FeatherfallPotion, 1);
+            recipe.AddIngredient(ItemID.WaterWalkingPotion, 1);
+            recipe.AddIngredient(ItemID.FlipperPotion, 1);
             recipe.AddTile(TileID.Bottles);
             recipe.SetResult(this);
             recipe.AddRecipe();
