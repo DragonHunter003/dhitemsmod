@@ -39,7 +39,7 @@ namespace DragonHunterItems
             if (fishingHookBoost && item.fishingPole > 0)
             {
                 const float ANGLE_SPREAD = 0.25f;
-                const int AMOUNT_HOOKS = Items.FishingHookPotion.HOOKAMOUNT;
+                const int AMOUNT_HOOKS = Items.Potions.FishingHookPotion.HOOKAMOUNT;
 
                 float baseSpeed = (float)Math.Sqrt(speedX*speedX + speedY*speedY);
                 float randomSpeed = Main.rand.NextFloat() * 0.2f + 0.9f;
