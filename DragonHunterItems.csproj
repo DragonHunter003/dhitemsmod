@@ -41,17 +41,24 @@
     <Compile Include="Buffs\IntenseBattlePotionBuff.cs" />
     <Compile Include="DragonHunterItems.cs" />
     <Compile Include="DragonHunterItemsPlayer.cs" />
-    <Compile Include="Items\FishingHookPotion.cs" />
+    <Compile Include="Items\Potions\EndlessIntenseBattlePotion.cs" />
+    <Compile Include="Items\Potions\EndlessExplorationPotion.cs" />
+    <Compile Include="Items\Potions\EndlessMovementPotion.cs" />
+    <Compile Include="Items\Potions\EndlessFishingHookPotion.cs" />
+    <Compile Include="Items\Potions\EndlessOffensivePotion.cs" />
+    <Compile Include="Items\Potions\EndlessDefensivePotion.cs" />
+    <Compile Include="Items\Potions\FishingHookPotion.cs" />
     <Compile Include="Items\InfiniteItem.cs" />
     <Compile Include="Items\CelestialShieldDestroyer.cs" />
-    <Compile Include="Items\DefensivePotion.cs" />
+    <Compile Include="Items\Potions\DefensivePotion.cs" />
     <Compile Include="Items\Lepidopterameter.cs" />
-    <Compile Include="Items\ExplorationPotion.cs" />
-    <Compile Include="Items\MovementPotion.cs" />
-    <Compile Include="Items\OffensivePotion.cs" />
-    <Compile Include="Items\IntenseBattlePotion.cs" />
+    <Compile Include="Items\Potions\ExplorationPotion.cs" />
+    <Compile Include="Items\Potions\MovementPotion.cs" />
+    <Compile Include="Items\Potions\OffensivePotion.cs" />
+    <Compile Include="Items\Potions\IntenseBattlePotion.cs" />
     <Compile Include="Items\DayNightCycler.cs" />
     <Compile Include="Items\MoonPhaseCycler.cs" />
+    <Compile Include="Projectiles\ShotgunShot.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
@@ -76,6 +83,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <Content Include="build.txt" />
+    <Content Include="description.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>"C:\Program Files (x86)\Steam\steamapps\common\terraria\Terraria.exe" -build "$(ProjectDir)\" -eac "$(TargetPath)"</PostBuildEvent>

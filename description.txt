@@ -4,30 +4,37 @@ This mod adds a bunch of random items I've created, most of which with a reducti
 
 Version History:
 
-v0.1
--Added Celestial Shield Destroyer
--Added Moon Phase cycler
--Added Intense Battle Potion
+v0.7
+-Added Endless versions of the potions
+-Changed sprite of the Fishing Hook Potion
 
-v0.2
--Added Day Night Cycler
+v0.6.1
+-Buffed Concentrated Battle Potion
 
-v0.3
--Added Defensive Potion
--Added Offensive Potion
+v0.6
+-Added Fishing Hook Potion
+-Changed recipes for the combination potions
 
-v0.4
--Added Lepidopterameter
--Added Infinite Item
+v0.5.1
+-Added github page as homepage
 
 v0.5
 -Added Exploration Potion
 -Added Movement Potion
 -Changed sprite for Offensive Potion
 
-v0.5.1
--Added github page as homepage
+v0.4
+-Added Lepidopterameter
+-Added Infinite Item
 
-v0.6
--Added Fishing Hook Potion
--Changed recipes for the combination potions
+v0.3
+-Added Defensive Potion
+-Added Offensive Potion
+
+v0.2
+-Added Day Night Cycler
+
+v0.1
+-Added Celestial Shield Destroyer
+-Added Moon Phase cycler
+-Added Concentrated Battle Potion

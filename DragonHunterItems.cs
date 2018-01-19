@@ -30,7 +30,7 @@ namespace DragonHunterItems
     {
 
        static float maxSpawnsMultiplier = 5f;
-       static float spawnRateMultiplier = 10f;
+       static float spawnRateMultiplier = 30f;
 
         public override void EditSpawnRate(Player player, ref int spawnRate, ref int maxSpawns)
         {

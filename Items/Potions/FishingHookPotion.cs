@@ -3,14 +3,15 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace DragonHunterItems.Items
+namespace DragonHunterItems.Items.Potions
 {
-    public class ExplorationPotion : ModItem
+    public class FishingHookPotion : ModItem
     {
+        public const int HOOKAMOUNT = 5;
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Exploration Potion");
-            Tooltip.SetDefault("This brew will make spelunking a whole lot easier");
+            DisplayName.SetDefault("Fishing Hook Potion");
+            Tooltip.SetDefault("Gives your fishing rod an additional "+HOOKAMOUNT+" hooks!");
         }
         public override void SetDefaults()
         {
@@ -20,7 +21,7 @@ namespace DragonHunterItems.Items
             item.useTime = 17;
             item.useAnimation = 17;
             item.consumable = true;
-            item.buffType = mod.BuffType("ExplorationPotionsBuff");
+            item.buffType = mod.BuffType("FishingHookPotionBuff");
             item.buffTime = 18000;
             item.maxStack = 30;
             item.UseSound = SoundID.Item3;
@@ -31,15 +32,7 @@ namespace DragonHunterItems.Items
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.NightOwlPotion, 1);
-            recipe.AddIngredient(ItemID.SpelunkerPotion, 1);
-            recipe.AddIngredient(ItemID.ShinePotion, 1);
-            recipe.AddIngredient(ItemID.BuilderPotion, 1);
-            recipe.AddIngredient(ItemID.MiningPotion, 1);
-            recipe.AddIngredient(ItemID.CratePotion, 1);
-            recipe.AddIngredient(ItemID.FishingPotion, 1);
-            recipe.AddIngredient(ItemID.SonarPotion, 1);
-            recipe.AddIngredient(ItemID.TrapsightPotion, 1);
+            recipe.AddIngredient(ItemID.FishingPotion, 3);
             recipe.AddTile(TileID.Bottles);
             recipe.SetResult(this);
             recipe.AddRecipe();

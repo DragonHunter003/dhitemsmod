@@ -32,7 +32,7 @@ namespace DragonHunterItems.Items
             recipe.AddIngredient(ItemID.FallenStar, 5);
             recipe.anyIronBar = true;
             recipe.SetResult(this);
-            recipe.AddRecipe();
+            //recipe.AddRecipe();
 		}
 
         public override bool UseItem(Player player)
