@@ -2,7 +2,7 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace DragonHunterItems.Items
+namespace DragonHunterItems.Items.Potions
 {
     public class IntenseBattlePotion : ModItem
     {
