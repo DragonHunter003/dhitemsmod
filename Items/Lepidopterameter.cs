@@ -37,15 +37,24 @@ namespace DragonHunterItems.Items
 
         public override bool UseItem(Player player)
         {
-            string text = (1.0f / ((float)NPC.butterflyChance + 1.0f) * 100.0f)+"%";
-                Main.NewText(text, 255, 0, 0, true);
+            if (player.whoAmI == Main.myPlayer)
+            {
+                if (player.altFunctionUse == 2)
+                {
+                    NPC.butterflyChance = 0;
+                }
+                else
+                {
+                    string text = (1.0f / ((float)NPC.butterflyChance + 1.0f) * 100.0f) + "%";
+                    Main.NewText(text, 255, 0, 0, false);
+                }
+            }
             return true;
         }
 
         public override bool AltFunctionUse(Player player)
-        {
-            NPC.butterflyChance = 0;
-            return false;
+        {         
+            return true;
         }
 
     }

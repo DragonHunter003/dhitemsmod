@@ -8,7 +8,8 @@ namespace DragonHunterItems.Items
 	{
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Infinite Item");
+            DisplayName.SetDefault("Void Gem");
+            Tooltip.SetDefault("A strange energy emits from this gem...");
         }
         public override void SetDefaults()
 		{		

@@ -41,6 +41,7 @@
     <Compile Include="Buffs\IntenseBattlePotionBuff.cs" />
     <Compile Include="DragonHunterItems.cs" />
     <Compile Include="DragonHunterItemsPlayer.cs" />
+    <Compile Include="Items\OmniBucket.cs" />
     <Compile Include="Items\Potions\EndlessIntenseBattlePotion.cs" />
     <Compile Include="Items\Potions\EndlessExplorationPotion.cs" />
     <Compile Include="Items\Potions\EndlessMovementPotion.cs" />
@@ -58,7 +59,7 @@
     <Compile Include="Items\Potions\IntenseBattlePotion.cs" />
     <Compile Include="Items\DayNightCycler.cs" />
     <Compile Include="Items\MoonPhaseCycler.cs" />
-    <Compile Include="Projectiles\ShotgunShot.cs" />
+    <Compile Include="Items\TestingItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
@@ -82,7 +83,9 @@
       <HintPath>I:\Games\Steam\steamapps\common\terraria\tModLoader.exe</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Projectiles\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="build.txt" />
     <Content Include="description.txt" />
