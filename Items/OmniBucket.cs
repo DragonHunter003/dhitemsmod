@@ -24,7 +24,7 @@ namespace DragonHunterItems.Items
             item.value = 10000;
             item.rare = 2;
             item.UseSound = SoundID.Item1;
-            item.autoReuse = false;
+            item.autoReuse = true;
             item.noMelee = true;
         }
 
@@ -34,7 +34,7 @@ namespace DragonHunterItems.Items
             recipe.AddIngredient(ItemID.LavaBucket, 33);
             recipe.AddIngredient(ItemID.WaterBucket, 33);
             recipe.AddIngredient(ItemID.HoneyBucket, 33);
-            recipe.AddTile(TileID.CrystalBall);
+            recipe.AddTile(TileID.WorkBenches);
             recipe.SetResult(this);
             recipe.AddRecipe();
         }

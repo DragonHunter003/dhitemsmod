@@ -1,5 +1,5 @@
 author = DragonHunter003
-version = 0.7.1
+version = 0.8.1
 displayName = Dragon Hunter's Item Collection
 homepage = https://github.com/DragonHunter003/dhitemsmod
 hideCodew = false

@@ -1,8 +1,16 @@
-*Warning heavily WIP and buggy*
+*Warning heavily WIP and possibly buggy*
 *Please report any bugs on my github page*
 This mod adds a bunch of random items I've created, most of which with a reduction of grinding during a vanilla playthrough in mind.
 
 Version History:
+v0.8.1
+-Added Cursed Key and Frozen Key (With unrelated placeholder textures)
+-Built for tModLoader v0.11.3
+
+v0.8
+-Changed Omni Bucket to be autoreusable
+-Added Worm Spawner
+-Added Fancy Item Frame (Doesn't display items) *Is used as a testing tool, not recommended for regular playthrough*
 
 v0.7.1
 -Added Omni Bucket
