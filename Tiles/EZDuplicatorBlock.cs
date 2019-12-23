@@ -19,7 +19,7 @@ namespace DragonHunterItems.Tiles
 
             Item selectedItem = player.inventory[player.selectedItem];
             Item.NewItem(i * 16, j * 16, 32, 32, selectedItem.type, selectedItem.stack, false, 0, false, false);
-            if (selectedItem.maxStack > 1)
+            if (selectedItem.maxStack > 1 && selectedItem.stack != 1)
             {
                 selectedItem.stack -= 1;
             }

@@ -5,11 +5,11 @@ using Terraria.ModLoader;
 
 namespace DragonHunterItems.Items
 {
-    public class FrozenKey : ModItem
+    public class FrostKey : ModItem
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Frozen Key");
+            DisplayName.SetDefault("Frost Key");
         }
         public override void SetDefaults()
         {

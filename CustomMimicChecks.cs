@@ -25,6 +25,7 @@ namespace DragonHunterItems
                     CustomBigMimicSummonCheck(chestX, chestY);
                 }
                 this.LastOpenedChest = player.chest;
+               
             }
         }
 
@@ -45,16 +46,16 @@ namespace DragonHunterItems
             int itemStackSize = 0;
             int emptyChestCheckNumber = 0;
             int summonItemUsed = 0;
-
+  
             for (int i = 0; i < 40; i++)
             {
                 int tileType = Main.tile[Main.chest[chestToCheckID].x,Main.chest[chestToCheckID].y].type;
                 int tileSubType = (Main.tile[Main.chest[chestToCheckID].x, Main.chest[chestToCheckID].y].frameX / 36);
 
-                if (TileID.Sets.BasicChest[tileType] && (tileType != 21 || tileSubType < 5 || tileSubType > 6) && Main.chest[chestToCheckID].item[i] != null && Main.chest[emptyChestCheckNumber].item[i].type > 0)
+                if (TileID.Sets.BasicChest[tileType] && (tileType != 21 || tileSubType < 5 || tileSubType > 6) && Main.chest[chestToCheckID].item[i] != null && Main.chest[chestToCheckID].item[i].type > 0)
                 {
                     int chestItemType = Main.chest[chestToCheckID].item[i].type;
-                    if (chestItemType != mod.ItemType("CursedKey") && chestItemType != mod.ItemType("FrozenKey") && chestItemType > 1)
+                    if (chestItemType != mod.ItemType("CursedKey") && chestItemType != mod.ItemType("FrostKey") && chestItemType > 1)
                     {
                         emptyChestCheckNumber += 1;
                     }
@@ -65,12 +66,14 @@ namespace DragonHunterItems
                             //Add normal summon to summonItemUsed
                             itemStackSize += Main.chest[chestToCheckID].item[i].stack;
                             summonItemUsed += 1;
+
                         }
-                        if (chestItemType == mod.ItemType("FrozenKey"))
+                        if (chestItemType == mod.ItemType("FrostKey"))
                         {
                             //Add frozen summon to summonItemUsed
                             itemStackSize += Main.chest[chestToCheckID].item[i].stack;
                             summonItemUsed += 2;
+
                         }
                     }
                 }

@@ -3,6 +3,10 @@
 This mod adds a bunch of random items I've created, most of which with a reduction of grinding during a vanilla playthrough in mind.
 
 Version History:
+v0.8.2
+-Fixed Cursed Key and Frozen Key not working properly
+-Renamed Frozen Key to Frost Key
+
 v0.8.1
 -Added Cursed Key and Frozen Key (With unrelated placeholder textures)
 -Built for tModLoader v0.11.3
