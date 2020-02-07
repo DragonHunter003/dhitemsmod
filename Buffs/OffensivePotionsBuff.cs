@@ -15,7 +15,7 @@ namespace DragonHunterItems.Buffs
 
         public override void Update(Player player, ref int buffIndex)
         {
-            player.GetModPlayer<DragonHunterItemsPlayer>(mod).offensiveBoost = true;
+            player.GetModPlayer<DragonHunterItemsPlayer>().offensiveBoost = true;
         }
     }
 }

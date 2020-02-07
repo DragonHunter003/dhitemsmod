@@ -10,14 +10,20 @@ namespace DragonHunterItems.Tiles
     {
         public override void KillMultiTile(int i, int j, int frameX, int frameY)
         {
-            Item.NewItem(i * 16, j * 16, 32, 32, mod.ItemType("WormSpawner"), 1, false, 0, false, false);
+            Item.NewItem(i * 16, j * 16, 32, 32, mod.ItemType("WormSpawner"), 1, false, -1, false, false);
         }
 
-        public override void RightClick(int i, int j)
+        public override bool NewRightClick(int i, int j)
         {
-            Item.NewItem(i* 16, j * 16, 32, 32, ItemID.Worm, 10, false, 0, false, false);
-           // NPC.NewNPC(i * 16, j * 16, NPCID.Worm);
+            int spawnedWorms = Item.NewItem(i * 16, j * 16, 32, 32, ItemID.Worm, 10, false, 0, false);
+            if (Main.netMode == 1)
+            {
+                NetMessage.SendData(21, -1, -1, null, spawnedWorms, 1f, 0f, 0f, 0, 0, 0);
+            }
+            return true;
         }
+    
+
 
         public override void SetDefaults()
         {

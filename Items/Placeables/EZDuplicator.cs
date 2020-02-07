@@ -31,6 +31,7 @@ namespace DragonHunterItems.Items.Placeables
         {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(ItemID.Wood,4996);
+            recipe.AddIngredient(mod, "InfiniteItem");
             recipe.AddTile(TileID.WorkBenches);
             recipe.SetResult(this);
             recipe.AddRecipe();

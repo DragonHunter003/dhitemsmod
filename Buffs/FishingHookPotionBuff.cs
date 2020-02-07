@@ -15,7 +15,7 @@ namespace DragonHunterItems.Buffs
 
         public override void Update(Player player, ref int buffIndex)
         {
-            player.GetModPlayer<DragonHunterItemsPlayer>(mod).fishingHookBoost = true;
+            player.GetModPlayer<DragonHunterItemsPlayer>().fishingHookBoost = true;
         }
     }
 }

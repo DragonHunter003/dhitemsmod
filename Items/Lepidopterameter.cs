@@ -32,7 +32,7 @@ namespace DragonHunterItems.Items
             recipe.AddIngredient(ItemID.FallenStar, 5);
             recipe.anyIronBar = true;
             recipe.SetResult(this);
-            //recipe.AddRecipe();
+            recipe.AddRecipe();
 		}
 
         public override bool UseItem(Player player)
@@ -45,7 +45,7 @@ namespace DragonHunterItems.Items
                 }
                 else
                 {
-                    string text = (1.0f / ((float)NPC.butterflyChance + 1.0f) * 100.0f) + "%";
+                    string text = "Butterfly Spawnrate is: "+(1.0f / ((float)NPC.butterflyChance + 1.0f) * 100.0f) + "%";
                     Main.NewText(text, 255, 0, 0, false);
                 }
             }

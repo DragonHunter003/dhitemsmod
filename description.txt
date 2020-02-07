@@ -3,6 +3,9 @@
 This mod adds a bunch of random items I've created, most of which with a reduction of grinding during a vanilla playthrough in mind.
 
 Version History:
+v0.8.3
+-Fixed Worm Spawner and Fancy Item Frame not working in MP
+
 v0.8.2
 -Fixed Cursed Key and Frozen Key not working properly
 -Renamed Frozen Key to Frost Key
